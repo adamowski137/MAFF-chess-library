@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmoves.a CMakeFiles/moves.dir/src/FigureMoves.cpp.o
+/usr/bin/ranlib libmoves.a
