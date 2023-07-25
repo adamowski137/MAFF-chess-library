@@ -8,12 +8,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/adamowski137/Desktop/projekty/MAFF-chess-library/src/main.cpp" "CMakeFiles/main.dir/src/main.cpp.o" "gcc" "CMakeFiles/main.dir/src/main.cpp.o.d"
+  "/home/adamowski137/Desktop/projekty/MAFF-chess-library/src/Board.cpp" "CMakeFiles/game.dir/src/Board.cpp.o" "gcc" "CMakeFiles/game.dir/src/Board.cpp.o.d"
+  "/home/adamowski137/Desktop/projekty/MAFF-chess-library/src/Game.cpp" "CMakeFiles/game.dir/src/Game.cpp.o" "gcc" "CMakeFiles/game.dir/src/Game.cpp.o.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/adamowski137/Desktop/projekty/MAFF-chess-library/build/CMakeFiles/game.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

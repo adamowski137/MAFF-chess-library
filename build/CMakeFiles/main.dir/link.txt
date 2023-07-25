@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/main.dir/src/main.cpp.o -o main  libmoves.a 
+/usr/bin/c++ CMakeFiles/main.dir/src/main.cpp.o -o main  libgame.a 

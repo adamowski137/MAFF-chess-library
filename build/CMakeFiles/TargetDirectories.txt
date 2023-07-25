@@ -1,4 +1,4 @@
-/home/adamowski137/Desktop/projekty/MAFF-chess-library/build/CMakeFiles/moves.dir
+/home/adamowski137/Desktop/projekty/MAFF-chess-library/build/CMakeFiles/game.dir
 /home/adamowski137/Desktop/projekty/MAFF-chess-library/build/CMakeFiles/main.dir
 /home/adamowski137/Desktop/projekty/MAFF-chess-library/build/CMakeFiles/edit_cache.dir
 /home/adamowski137/Desktop/projekty/MAFF-chess-library/build/CMakeFiles/rebuild_cache.dir

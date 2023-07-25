@@ -1,19 +1,24 @@
+#include <stack>
+#include <chrono>
 #include <iostream>
-#include <iomanip>
-#include <bitset>
-#include "FigureMoves.hpp"
+#include <vector>
+#include "Stack.hpp"
+#include "Game.hpp"
 
-using namespace maffLibrary;
 
 int main()
 {
-    FigureMoves f{};
-    uint64_t mask = 1;
-    uint64_t t = FigureMoves::AvailableMoves[std::pair<std::string, int>("n", 0)];
-    for(int i = 0; i < 64; i++)
-    {
-        std::cout<< ((mask & t) > 0) ? 1 : 0;
-        mask = (mask << 1);
-        if(i % 8 == 7) std::cout<<std::endl;
+    using namespace maff;
+    Game game;
+
+    auto start = std::chrono::high_resolution_clock::now() ;
+
+    for(int i = 0; i < 1e6; i++){
+        Board b;
+        game.pushBoard(b);
     }
+    std::cout << game << std::endl;
+
+    auto dur = std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::high_resolution_clock::now() - start);  
+    std::cout << dur.count() << '\n';
 }

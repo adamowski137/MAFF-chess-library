@@ -6,11 +6,12 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 project(maff-chess-library)
 
 add_library(
-    moves
-    src/FigureMoves.hpp
-    src/FigureMoves.cpp
+    game
+    src/Stack.hpp
+    src/Game.cpp 
+    src/Board.cpp
 )
 
 add_executable(main src/main.cpp)
 
-target_link_libraries(main PRIVATE moves)
+target_link_libraries(main PRIVATE game)

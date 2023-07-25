@@ -117,17 +117,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named moves
+# Target rules for targets named game
 
 # Build rule for target.
-moves: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 moves
-.PHONY : moves
+game: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 game
+.PHONY : game
 
 # fast build rule for target.
-moves/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/moves.dir/build.make CMakeFiles/moves.dir/build
-.PHONY : moves/fast
+game/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/build
+.PHONY : game/fast
 
 #=============================================================================
 # Target rules for targets named main
@@ -142,29 +142,53 @@ main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
 
-src/FigureMoves.o: src/FigureMoves.cpp.o
-.PHONY : src/FigureMoves.o
+src/Board.o: src/Board.cpp.o
+.PHONY : src/Board.o
 
 # target to build an object file
-src/FigureMoves.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/moves.dir/build.make CMakeFiles/moves.dir/src/FigureMoves.cpp.o
-.PHONY : src/FigureMoves.cpp.o
+src/Board.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/Board.cpp.o
+.PHONY : src/Board.cpp.o
 
-src/FigureMoves.i: src/FigureMoves.cpp.i
-.PHONY : src/FigureMoves.i
+src/Board.i: src/Board.cpp.i
+.PHONY : src/Board.i
 
 # target to preprocess a source file
-src/FigureMoves.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/moves.dir/build.make CMakeFiles/moves.dir/src/FigureMoves.cpp.i
-.PHONY : src/FigureMoves.cpp.i
+src/Board.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/Board.cpp.i
+.PHONY : src/Board.cpp.i
 
-src/FigureMoves.s: src/FigureMoves.cpp.s
-.PHONY : src/FigureMoves.s
+src/Board.s: src/Board.cpp.s
+.PHONY : src/Board.s
 
 # target to generate assembly for a file
-src/FigureMoves.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/moves.dir/build.make CMakeFiles/moves.dir/src/FigureMoves.cpp.s
-.PHONY : src/FigureMoves.cpp.s
+src/Board.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/Board.cpp.s
+.PHONY : src/Board.cpp.s
+
+src/Game.o: src/Game.cpp.o
+.PHONY : src/Game.o
+
+# target to build an object file
+src/Game.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/Game.cpp.o
+.PHONY : src/Game.cpp.o
+
+src/Game.i: src/Game.cpp.i
+.PHONY : src/Game.i
+
+# target to preprocess a source file
+src/Game.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/Game.cpp.i
+.PHONY : src/Game.cpp.i
+
+src/Game.s: src/Game.cpp.s
+.PHONY : src/Game.s
+
+# target to generate assembly for a file
+src/Game.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/Game.cpp.s
+.PHONY : src/Game.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
@@ -198,11 +222,14 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... game"
 	@echo "... main"
-	@echo "... moves"
-	@echo "... src/FigureMoves.o"
-	@echo "... src/FigureMoves.i"
-	@echo "... src/FigureMoves.s"
+	@echo "... src/Board.o"
+	@echo "... src/Board.i"
+	@echo "... src/Board.s"
+	@echo "... src/Game.o"
+	@echo "... src/Game.i"
+	@echo "... src/Game.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
